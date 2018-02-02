@@ -22,7 +22,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Example of a call to a native method
-        sample_text.text = stringFromJNI()
+//        sample_text.text = stringFromJNI()
+        sample_text.text = stringTest()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -46,6 +47,8 @@ class MainActivity : AppCompatActivity() {
      * which is packaged with this application.
      */
     external fun stringFromJNI(): String
+
+    external fun stringTest(): String
 
     companion object {
 
